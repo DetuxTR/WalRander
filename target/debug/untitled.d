@@ -1,0 +1,1 @@
+/home/detux/IdeaProjects/untitled/target/debug/untitled: /home/detux/IdeaProjects/untitled/src/config.rs /home/detux/IdeaProjects/untitled/src/json.rs /home/detux/IdeaProjects/untitled/src/loadwp.rs /home/detux/IdeaProjects/untitled/src/main.rs
