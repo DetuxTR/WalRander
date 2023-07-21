@@ -4,43 +4,64 @@ use std::path::{Path, PathBuf};
 use std::ffi::OsStr;
 
 
-pub fn get_files (f_path : &str) -> Vec<String>
+pub fn get_files (rw_f_path : Vec<String>) -> Vec<String>
 {
-    let paths = fs::read_dir(f_path).unwrap();
+    //Single Directory
+    // let paths = fs::read_dir(f_path).unwrap();
+    // let mut files : Vec<String> = vec![];
+    //
+    // for mut path in paths
+    // {
+    //     if let Ok(entry) = path
+    //     {
+    //         if let Some(file_path) = entry.path().to_str()
+    //         {
+    //             files.push(file_path.to_string());
+    //         }
+    //     }
+    // }
     let mut files : Vec<String> = vec![];
 
-    for mut path in paths
+    for fp in rw_f_path
     {
-        if let Ok(entry) = path
+
+        let fpath = fs::read_dir(fp).unwrap();
+        for mut path in fpath
         {
-            if let Some(file_path) = entry.path().to_str()
+            if let Ok(entry) = path
             {
-                files.push(file_path.to_string());
+                if let Some (file_path) = entry.path().to_str()
+                {
+                    files.push(file_path.to_string());
+                }
             }
         }
     }
-    let supportedformats : Vec<&str> = vec!["jpg","png"];
-    let mut supportedfiles : Vec<String> = vec![];
-   for file in files
-   {
 
-       if let Some(extension) = Path::new(&file).extension()
-       {
+
+     let supportedformats : Vec<&str> = vec!["jpg","png"];
+    let mut supportedfiles : Vec<String> = vec![];
+    for file in files
+    {
+
+        if let Some(extension) = Path::new(&file).extension()
+            {
            if let Some(extension_str) = extension.to_str()
-           {
+               {
                 if supportedformats.contains(&extension_str)
-                {
-                    if let Ok(rfp) = fs::canonicalize(file)
                     {
-                        if let Some(fp) = rfp.to_str()
+                    if let Ok(rfp) = fs::canonicalize(file)
                         {
-                            println!("{}",fp);
-                            supportedfiles.push(fp.to_string());
+                            if let Some(fp) = rfp.to_str()
+                            {
+                                println!("{}",fp);
+                                supportedfiles.push(fp.to_string());
+                            }
                         }
-                    }
                 }
            }
        }
    }
     supportedfiles
+
 }

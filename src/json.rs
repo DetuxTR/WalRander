@@ -14,18 +14,20 @@ pub struct jsoned
 {
     pub (crate) directories : String
 }
-fn read_json_file(filename : &str ) -> Json
+pub fn read_json_file(json_path : &str) -> Json
 {
-    let raw_json = fs::read_to_string(filename).unwrap();
-    let json:Json = serde_json::from_str(&*raw_json).unwrap();
+    let raw_json = &fs::read_to_string(json_path).unwrap() as &str;
+    let json:Json = serde_json::from_str(raw_json).unwrap();
     json
 }
 
-fn load_json_file(rwjsn : Json) -> jsoned
+pub fn load_json_file(rwjsn : Json) -> jsoned
 {
     let fnl_json = jsoned
     {
-        directories: rwjsn.directories.to_string(),
+        directories: rwjsn.directories
     };
+
+    println!("Directory reading :{}", fnl_json.directories);
     fnl_json
 }
