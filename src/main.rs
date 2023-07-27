@@ -5,16 +5,16 @@ mod getwps;
 mod json;
 mod walbackend;
 mod mjson;
+mod backproccess;
+mod random;
 
 fn main()
 {
         let configed = config::main();
-
-
-
         let mjsoned = mjson::loadjson(mjson::initjson());
-        let wploc = getwps::get_files(mjsoned.directories.clone()) ;
 
+        let wals = getwps::get_files(mjsoned.directories.clone());
+        backproccess::pr(configed.delay, wals,mjsoned.lastwp);
 
 }
 

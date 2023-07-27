@@ -1,4 +1,9 @@
 {
-  "directories": ["/home/detux/wall/w1/","/home/detux/wall/w2/"]
-
+  "directories": [
+    "/home/detux/wall/w1/",
+    "/home/detux/wall/w2/"
+  ],
+  "lastwp": [
+    "/home/detux/wall/w2/ro2.jpg"
+  ]
 }
