@@ -13,8 +13,7 @@ pub fn random (dirs: Vec<String>,chngfunc : fn(&str,Json), lastwp : Vec<String>,
         {
             continue
         }
-        println!("Random Data {}", dirs[randomwp].clone());
-        println!("{}",latestwp[0]);
+
         chngfunc(&*dirs[randomwp].clone(), jsn);
         return dirs[randomwp].clone();
 

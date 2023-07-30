@@ -52,11 +52,11 @@ pub fn set_lastwp(wpdir:&str, mut unljson:Json)
     let dir = vec![wpdir];
     //
     // unljson.lastwp.insert(dir.len(), wpdir.parse().unwrap());
-    println!("Sa : {}", wpdir);
+
 
     unljson.lastwp.insert(dir.len(),dir[0].parse().unwrap());
     unljson.lastwp.remove(0);
-    println!("{:#?}",unljson);
+
 
 
     fs::write(

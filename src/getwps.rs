@@ -54,7 +54,7 @@ pub fn get_files (rw_f_path : Vec<String>) -> Vec<String>
                         {
                             if let Some(fp) = rfp.to_str()
                             {
-                                println!("{}",fp);
+
                                 supportedfiles.push(fp.to_string());
                             }
                         }

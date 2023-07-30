@@ -1,9 +1,0 @@
-/home/detux/IdeaProjects/untitled/target/debug/deps/libproc_macro_hack-fdd26a853f172859.so: /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/lib.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/quote.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/error.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/iter.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/parse.rs
-
-/home/detux/IdeaProjects/untitled/target/debug/deps/proc_macro_hack-fdd26a853f172859.d: /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/lib.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/quote.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/error.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/iter.rs /home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/parse.rs
-
-/home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/lib.rs:
-/home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/quote.rs:
-/home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/error.rs:
-/home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/iter.rs:
-/home/detux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/proc-macro-hack-0.5.20+deprecated/src/parse.rs:

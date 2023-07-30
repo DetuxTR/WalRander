@@ -14,7 +14,10 @@ fn main()
         let mjsoned = mjson::loadjson(mjson::initjson());
 
         let wals = getwps::get_files(mjsoned.directories.clone());
+
         backproccess::pr(configed.delay, wals,mjsoned.lastwp);
+
+
 
 }
 
