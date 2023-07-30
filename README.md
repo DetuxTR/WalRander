@@ -5,5 +5,5 @@ To use app add your wallpaper directories in mdirs.json in project root.(they ar
 Project is under development!!!
 Feel free to fork project.
 
-License: Gnu Gpl 3
+Licensed under: Gnu Gpl 3
 
